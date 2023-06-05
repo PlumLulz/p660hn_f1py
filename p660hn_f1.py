@@ -21,7 +21,7 @@ def p660hn_f1(mac, length):
 
 parser = argparse.ArgumentParser(description='Zyxel p-660HN-F1 Keygen')
 parser.add_argument('mac', help='Mac address (upper case without colons or offset)')
-parser.add_argument('-length', help='Password length', default=10)
+parser.add_argument('-length', help='Password length', default=10, type=int)
 args = parser.parse_args()
 
 p660hn_f1(args.mac, args.length)
